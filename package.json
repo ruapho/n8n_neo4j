@@ -1,16 +1,17 @@
 {
   "name": "n8s_neo4j",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Simple n8n.io node to support neo4j access.",
+  "main": "Neo4j.node.ts",
   "dependencies": {
+  },
+  "devDependencies": {
     "n8n-node-dev": "^0.7.0",
     "typescript": "^3.8.3"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "n8n-node-dev build"
   },
-  "author": "",
+  "author": "Ivan Lukic",
   "license": "ISC"
 }
