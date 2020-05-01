@@ -24,6 +24,12 @@ export class Neo4j implements ICredentialType {
 			default: '',
 		},
 		{
+			displayName: 'Database',
+			name: 'database',
+			type: 'string' as NodePropertyTypes,
+			default: 'neo4j',
+		},
+		{
 			displayName: 'Url',
 			name: 'url',
 			type: 'string' as NodePropertyTypes,

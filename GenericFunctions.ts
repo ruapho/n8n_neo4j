@@ -26,7 +26,7 @@ export async function executeCypher(this: IPollFunctions | IExecuteFunctions, cy
 			},
 			method: "POST",
 			body: body,
-			uri: `${credentials.url}/db/neo4j/tx/commit`,
+			uri: `${credentials.url}/db/${credentials.database}/tx/commit`,
 			json: true
         };
         
