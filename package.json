@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "description": "Simple n8n.io node to support neo4j access.",
   "main": "Neo4j.node.ts",
-  "dependencies": {
-  },
   "devDependencies": {
-    "n8n-node-dev": "^0.7.0",
-    "typescript": "^3.8.3"
+    "n8n-node-dev": "^0.15.0",
+    "typescript": "~3.9.7"
   },
   "scripts": {
     "build": "n8n-node-dev build"
