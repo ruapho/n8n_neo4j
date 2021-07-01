@@ -9,7 +9,7 @@
   },
   "scripts": {
     "//": "Change file \\node_modules\\n8n-node-dev\\dist\\src\\Build.js: const tscPath = path_1.join(__dirname, '../../../../node_modules/typescript/bin/tsc');",
-    "build": "n8n-node-dev build --destination c:\\Users\\ruaph\\.n8n\\custom"
+    "build": "n8n-node-dev build"
   },
   "author": "Ivan Lukic",
   "license": "ISC",

@@ -43,12 +43,12 @@ export class Neo4j implements INodeType {
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const cypher = this.getNodeParameter('cypher', 0);
-		var result = await executeCypher.call(this, cypher);
+		var result = flatten(await executeCypher.call(this, cypher));
 
 		let returnItems = [];
 
 		if (Array.isArray(result) && result.length !== 0) {
-			returnItems = this.helpers.returnJsonArray(flatten(result) as IDataObject[]);
+			returnItems = this.helpers.returnJsonArray(result);
 		} else {
 			returnItems = this.helpers.returnJsonArray([{}]);
 		}
